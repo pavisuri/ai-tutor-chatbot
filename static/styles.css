@@ -1,0 +1,68 @@
+/* General styles for the chat container */
+.chat-container {
+    width: 95%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Chat box where messages are displayed */
+#chat-box {
+    height: 700px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Chat message bubbles */
+.chat-message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 15px;
+    max-width: 75%;
+    word-wrap: break-word;
+}
+
+/* User messages: align to the right, different color */
+.chat-message.user {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    text-align: right;
+    margin-left: auto;
+}
+
+/* AI messages: align to the left, different color */
+.chat-message.ai {
+    background-color: #f8d7da;
+    color: #842029;
+    text-align: left;
+    margin-right: auto;
+}
+
+/* Input form for queries */
+form {
+    display: flex;
+    justify-content: space-between;
+}
+
+#queryInput {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #198754;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #157347;
+}

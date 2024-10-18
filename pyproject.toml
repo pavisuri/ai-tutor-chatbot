@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "ai_tutor_project"
+version = "0.1.0"
+description = "AI Tutor chatbot using Hugging Face dataset, embeddings, and AI Studio LLM"
+authors = ["Pavithra <SuryamurthyP@hawks.rockhurst.edu>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Flask = "^2.0.3"
+datasets = "^2.6.1"
+transformers = "^4.21.0"
+sentence-transformers = "^2.2.2"
+requests = "^2.26.0"
+numpy = "^1.21.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "app.__main__:main"
+
+[tool.black]
+line-length = 88
+target-version = ['py37']
+
+[tool.isort]
+profile = "black"
